@@ -218,6 +218,8 @@ function runClaude(systemPrompt, promptText, modelId, onChunk, signal, reasoning
             '--dangerously-skip-permissions',
             '--output-format', 'stream-json',
             '--verbose',
+            '--mcp-config', '/Users/ayroescobarmac/.openclaw/empty-mcp.json',
+            '--strict-mcp-config',
         ];
 
         // Always pass --model (not persisted in session)
